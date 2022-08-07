@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Login</title>
+    <style>
+        th,td{
+            border-style: groove;
+        }
+    </style>
+</head>
+<body>
+    <h1>เข้าสู่ระบบ</h1>
+    <form action="login.html">
+        <table>
+            <tr>
+                <th><label for="Username">Username: </label></th>
+                <th><input type="text"  id="username" autofocus required></th><br><br>
+            </tr>
+            <tr>
+                <th><label for="Password">Password: </label></th>
+                <th><input type="text"  id="password" required></th>
+            </tr>
+            <td colspan="2">
+                <label for="check_password">กรุณาพิมพ์ตามตัวเลขที่ปรากฎ <br> 1559</label><br>
+                <input type="text" id="check_password" pattern="^1559" required>
+            </td>
+        </table>
+        <input type="image" src="https://cdn1.iconfinder.com/data/icons/navigation-icon/128/login-128.png" style="height: 50px; width:60px">
+    </form>
+</body>
+</html>

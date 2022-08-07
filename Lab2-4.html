@@ -4,9 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>User</title>
 </head>
 <body>
-    
+    <form action="form-echo.php" method="get">
+        USERNAME :
+        <input type="text" name="username" placeholder="Username" pattern="[A-Z]+" required>
+        <p><label>สาขาวิชา:</label>
+        <select name="dept">
+        <option value="">--Please choose an option--</option>
+        <option value="CS">IC</option>
+        <option value="IC">CS</option>
+        <option value="MA">MA</option>
+        <option value="IMI">IMI</option>
+        <option value="AS">AS</option>
+        <option value="AFET">AFET</option>
+        </select>
+        <p>รหัสนักศึกษา :
+        <input type="text" name="student_id" placeholder="รหัสนักศึกษา" pattern="\d{2}[-]\d{6}[-]\d{4}[-]\d{1}" required>
+        <p>บ้านเลขที่ : 
+            <input type="text" name="House address" placeholder="House address" pattern="{1,}[/].{1,}">
+        <p>รหัสสินค้า : 
+            <input type="text" name="รหัสสินค้า" placeholder="รหัสสินค้า" pattern="[A-Z]{3}\d{2}" required>
+        <p>ชื่อ :
+            <input type="text" name="thai_language" placeholder="ชื่อภาษาไทยเท่านั้น" pattern="^[ก-๏\s]+$" required>
+        <p><input type="submit" value="Submit">
 </body>
 </html>
